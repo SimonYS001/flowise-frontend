@@ -2,21 +2,20 @@
  * @Author: SimonYS001 su.simon.yang@gmail.com
  * @Date: 2024-02-24 17:04:45
  * @LastEditors: SimonYS001 su.simon.yang@gmail.com
- * @LastEditTime: 2024-02-24 17:21:56
+ * @LastEditTime: 2024-03-01 13:29:05
  * @FilePath: \flowise-frontend\src\components\ButtonAppBar.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
-import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
+import * as React from "react"
+import AppBar from "@mui/material/AppBar"
+import Box from "@mui/material/Box"
+import Toolbar from "@mui/material/Toolbar"
+import Typography from "@mui/material/Typography"
+import Button from "@mui/material/Button"
+import IconButton from "@mui/material/IconButton"
+import MenuIcon from "@mui/icons-material/Menu"
 
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { CardMedia } from "@mui/material";
+import { createTheme, ThemeProvider } from "@mui/material/styles"
 
 const darkTheme = createTheme({
   palette: {
@@ -25,9 +24,9 @@ const darkTheme = createTheme({
       main: "#0A0B13",
     },
   },
-});
+})
 
-export default function ButtonAppBar() {
+export default function ButtonAppBar () {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <ThemeProvider theme={darkTheme}>
@@ -42,7 +41,7 @@ export default function ButtonAppBar() {
             >
               <MenuIcon />
             </IconButton>
-            <img src="..\logo_flowise.png" width={"100px"} alt="logo" />
+            <img src="..\logo111.png" width={"100px"} alt="logo" />
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
               Chat with Building Code
             </Typography>
@@ -51,5 +50,5 @@ export default function ButtonAppBar() {
         </AppBar>
       </ThemeProvider>
     </Box>
-  );
+  )
 }
